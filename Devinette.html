@@ -1,0 +1,64 @@
+<!--
+Copyright (c) 2009 Zhaohai Nathaniel Lee <ZHNathanielLee@gmail.com>
+Distributed under the Apache License, Version 2.0
+
+Acknowledgements
+Copyright (c) 2011-2012, Julieta Ulanovsky <julieta.ulanovsky@gmail.com>, with Reserved Font Names "Montserrat"
+Copyright (c) Dave Gandy, with Reserved Font Awesome 4.3.0
+-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Devinette</title>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='Devinette.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1 class="title">DEVINETTE</h1>
+	<h2 class="title">A Random password generator</h2>
+
+	<div class="MainDiv">
+		<div class="formheader">SETTINGS</div>
+		<div class="formbody">
+			<div class="optiontitle">Character Sets</div>
+			<div class="chkbox"><input type="checkbox" id="Numbers" checked="checked"><label for="Numbers">Numbers</label></div>
+			<div class="chkbox"><input type="checkbox" id="LowerCase" checked="checked"><label for="LowerCase">Lowercase</label></div>
+			<div class="chkbox"><input type="checkbox" id="UpperCase" checked="checked"><label for="UpperCase">Uppercase</label></div>
+			<div class="chkbox"><input type="checkbox" id="ACSIISymbols"><label for="ACSIISymbols">ASCII symbols</label></div>
+			<div class="chkbox"><input type="checkbox" id="Space"><label for="Space">Space</label></div>
+			<div class="chkbox"><input type="checkbox" id="Custom"><label for="Custom">Custom <input type="text" id="CustomStr" value="" size="15" oninput="makeCustomCheck();" placeholder="╮(￣▽ ￣)╭"></label></div>
+
+			<div class="optiontitle">Build Options</div>
+			<div><input type="radio" name="type" id="FixedLength" checked="checked" class="option-input radio"><label for="FixedLength">Fixed Length&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" value="24" id="numLength" oninput="makeFixedLengthCheck();">&nbsp;characters</label></div>
+			<div><input type="radio" name="type" id="FixedEntropy"><label for="FixedEntropy">Fixed Entropy&nbsp;&nbsp;<input type="number" value="512" step="any" id="numEntropy" oninput="makeFixedEntropyCheck();">&nbsp;bits</label></div>
+
+			<div class="but_div"><a href="#" onclick="Generate(); return false;" class="button color">Generate</a></div>
+
+			<div class="optiontitle">Password</div>
+			<div class="passwd"><span id="Password"></span></div>
+
+			<div class="optiontitle">Password feature</div>
+			<div class="featureBar">
+				<li class="feature_element">
+					<i class="fa fa-sort-alpha-asc"></i> <span>Length<br></span>
+					<span class="Indicator" id="Length"></span>
+				</li>
+				<li class="feature_element">
+					<i class="fa fa-file-text-o"></i> <span>Charset size<br></span>
+					<span class="Indicator" id="CharacterSetSize"></span>
+				</li>
+				<li class="feature_element">
+					<i class="fa fa-fire"></i> <span>Max-Entropy<br></span>
+					<span class="Indicator" id="Entropy"></span>
+				</li>
+			</div>
+		</div>
+		<div class="formfooter">Copyright 2009 Zhaohai Nathaniel Lee. All rights reserved.</div>
+	</div>
+
+	<script src="Devinette.js" type="text/javascript"></script>
+
+</body></html>

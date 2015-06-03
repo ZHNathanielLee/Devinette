@@ -1,0 +1,267 @@
+/*
+Copyright (c) 2009 Zhaohai Nathaniel Lee <ZHNathanielLee@gmail.com>
+Distributed under the Apache License, Version 2.0
+*/
+
+body {
+	background:#38424b;
+	font-family:Montserrat;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 4.2em;
+	margin-bottom:0em;
+}
+
+h2 {
+	font-weight: Normal;
+	font-size: 1.5em;
+	margin-top:0em;
+	margin-bottom:2.5em;
+}
+
+.title {
+	text-align: center;
+	color:#fffefb;
+}
+
+.MainDiv {
+	MARGIN-RIGHT: auto;
+	MARGIN-LEFT: auto;
+	width:75%;
+	min-width:43em;
+}
+
+.formheader {
+	border-color: #445e77;
+	background: #445e77;
+	color:#ffffff;
+	font-size: 1.4em;
+	text-align: center;
+	border-width: 1em;
+	border-style: solid;
+	border-radius: 1em 1em 0em 0em;
+	height: 1.2em;
+}
+
+.formbody {
+	background: #ffffff;
+	color: #999999;
+	padding:2em;
+}
+
+.formfooter {
+	border-color: #777;
+	background: #777;
+	color:#ffffff;
+	font-size: 1.2em;
+	text-align: center;
+	border-width: 1em;
+	border-style: solid;
+	border-radius: 0em 0em 1em 1em;
+	height: 1.2em;
+	MARGIN-bottom: 7em;
+}
+
+.optiontitle {
+	width:100%;
+	float:none;
+	text-align:left;
+	font-size: 1.2em;
+	color: #777777;
+	padding-bottom:1.2em;
+}
+
+.chkbox {
+	display:inline;
+	padding:0em 2.5em 0em 0em;
+}
+
+.sperate_line {
+	height: 0.2em;
+	background: #eee;
+	border-radius: 1em;
+	margin-bottom: 1.8em;
+}
+
+.but_div {
+	MARGIN-RIGHT: auto;
+	MARGIN-LEFT: auto;
+	margin-bottom: 1.5em;
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	margin: 1.5em;
+	padding: 0em 7em;
+	padding-top: 0.7em;
+	text-align: center;
+	text-decoration: none;
+	height: 2em;
+	font-size: 1.5em;
+}
+
+.color {
+	color: #ffffff;
+	background: #8bc548;
+	border-radius: 4em;
+}
+
+.passwd {
+	word-break:break-all;
+	background:#eee;
+	color: #888;
+	padding: 1em;
+	margin-bottom: 1.5em;
+	border: 0.20em solid #eee;
+	border-radius: 0.7em;
+	min-height:1.4em;
+}
+
+.featureBar {
+	height: 8em;
+	padding-left: 1em;
+}
+
+.feature_element {
+	float:left;
+	list-sytle:none;
+	list-style-type:none;
+	width: 33.3333%;
+	font-size:1.3em;
+}
+
+.Indicator {
+	font-size:4em;
+}
+
+input[type="text"] {
+	margin: 0;
+	background: #eee;
+	color: #888;
+	border: 0.20em solid #eee;
+	border-radius: 0.5em;
+	font-family: Montserrat, arial;
+	padding: 0.25em;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	margin: 0;
+	background: #eee;
+	color: #888;
+	border: 0.20em solid #eee;
+	border-radius: 0.5em;
+	font-family: Montserrat;
+	padding: 0.25em;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked,
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+	position: absolute;
+	left: -9999em;
+}
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label,
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+	position: relative;
+	overflow: hidden;
+	padding-left: 2em;
+	height: 3em;
+	line-height: 1.5em;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+}
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+	position: relative;
+	overflow: hidden;
+	padding-left: 0.35em;
+	height: 3em;
+	line-height: 1.5em;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+}
+
+[type="checkbox"] + label:before,
+[type="checkbox"] + label:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+
+[type="checkbox"]:not(:checked) + label:before {
+	top: 0px;
+	width: 1.17em; height: 1.17em;
+	border: 0.2em solid #ddd;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+	top: 0px;
+	width: 1.17em; height: 1.17em;
+	border: 0.2em solid #eee;
+	z-index: 0;
+}
+
+[type="checkbox"]:checked + label:before {
+	top: 0.15em;
+	width: 0.4em; height: 0.7em;
+	border-top: 0.2em solid transparent;
+	border-left: 0.2em solid transparent;
+	border-right: 0.2em solid #8bc548;
+	border-bottom: 0.2em solid #8bc548;
+	-webkit-transform: rotateZ(37deg);
+	transform: rotateZ(37deg);
+
+	-webkit-transform-origin: 20% 40%;
+	transform-origin: 100% 100%;
+}
+
+[type="checkbox"]:checked + label:after {
+	top: 0em;
+	width: 1.17em; height: 1.17em;
+	border: 0.2em solid #eee;
+	background-color: #eee;
+	z-index: 0;
+}
+
+[type="radio"] + label {
+	display: block;
+}
+
+[type="radio"] + label:before {
+	content: '';
+	display: inline-block;
+	width: 0.8em;
+	height: 0.8em;
+	vertical-align: -0.25em;
+	border-radius: 1em;
+	border: 0.125em solid #fff;
+	box-shadow: 0 0 0 0.125em #eee;
+	margin-right: 0.75em;
+	transition: 0.2s ease all;
+}
+
+[type="radio"]:checked + label:before {
+	background: #8bc548;
+	box-shadow: 0 0 0 0.125em #eee;
+}
